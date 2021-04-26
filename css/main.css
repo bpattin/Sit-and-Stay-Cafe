@@ -12,13 +12,13 @@ body{
 }
 
   h1 {
-    clear: both;
+    display: flex;
     color: #2d99c8;
     font-family: 'Halant';
     font-weight: bold;
-    font-size: 60px;
+    font-size: 3rem;
     line-height:60px;
-    padding: 0 40px;
+    margin-top: 300px;
   }
 
   h2 {
@@ -55,7 +55,12 @@ body{
   }
 
   .third-width{
-    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0 15px 25px;
+    width: 32%;
   }
 
 /*****HEADER*****/
@@ -112,7 +117,7 @@ body{
     padding-right: 5%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap; 
   }
 
@@ -132,7 +137,9 @@ body{
   }  
     
     
-    .third-width #beverages
+  .third-width #beverages,
+  #food,
+  #treats {
     padding:  0 0 35px;
     text-align: center;
     width: 33.3%;
@@ -140,7 +147,7 @@ body{
 
   #beverages img,
   #food img,
-  #treats img{
+  #treats img {
       height: 500px;
       object-position: initial;
       width: 395px;
@@ -169,11 +176,11 @@ body{
   }
 
 /*****ABOUT US*****/
-        #about-us-photo .full-width{
-          background-color: #fcfbf7;
-          height:705px;
-          text-align: center;
-        }
+      #about-us-photo .full-width{
+        background-color: #fcfbf7;
+        height:705px;
+        text-align: center;
+      }
 
       #about-us-photo img {
         display: flex;
@@ -184,7 +191,7 @@ body{
         margin-left: 1%;
       }
 
-        #about-us-info p{
+      #about-us-info p{
           color: #fcfcf7;
           font-family: 'Halant';
           font-size: 36px;
@@ -212,27 +219,55 @@ body{
           height: 800px;
         }
 
+        .contact-us-wrapper {
+          padding-left: 5%;
+          padding-right: 5%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-flow: row wrap;     
+        }
+    
+        #contact-us .third-width {
+          
+        }
+
+        #social.third-width {
+          display: flex;
+          flex-direction: column;
+        }
+
+
+
         #contact-us p{
           font-weight: bolder;
         }
 
-        #social img{
-          height: 175px;
-          padding: 100px 0 0 175px;
-          width: 250px;
+        #links {
+          margin-top: 55px;
+        }
+
+        #social img {
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+          padding-left: 35%;
+          padding-right: 35%;
+          padding-top: 47%;
+          padding-bottom: 47%;
         }
 
         #info p{
-            padding-bottom: 100px;
+          padding-bottom: 100px;
         }
 
         p span{
-            padding-top:125px;
+          padding-top:125px;
         }
 
         #info p{
-            padding-bottom: 125px;
-            text-align:center;
+          padding-bottom: 125px;
+          text-align:center;
         }
 
 
@@ -294,7 +329,6 @@ body{
         #reviews-page-header.full-width {
           background: url('../img/chihuahua.png');
           height: 650px;
-          width: 1200px;
         }
 
         .heading h2 {
@@ -351,7 +385,7 @@ body{
         }
         
         .clearfix:after {
-          content:"";
+          content:"testimonial photos";
           display: table;
           clear: both;
         }
